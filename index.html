@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rent a house</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+  integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm row container">
+    <div class="col-12 col-md-12 col-lg-6 col-sm-4 text-right">
+      <a class="navbar-brand" href="#">
+        <img src="images/sp-logo.svg" alt="logo" style="max-width: 50px;">
+      </a>
+    </div>
+    <div class="col-8 col-md-12 col-lg-6 col-sm-8 text-right">
+      <!--
+      <ul class="navbar-nav container icon">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-tripadvisor"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fab fa-pinterest-p"></i></a>
+        </li>
+      </ul>
+      -->
+      <ul class="navbar-nav menu">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Welcome </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rent-a-home">| Rent a house </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#things-to-do">| Things to do </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-us">| Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#other-properties">| Other properties </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="row jumbotron">
+
+      <div class="col-12 col-md-4 text text-center container">
+        <h1><small>Current Vacancy</small></h1>
+        <!--
+          <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+        -->
+        <h2>
+          <small>
+            Victorville, CA <br>
+            3 Bed | 2 Bath | 1,344 sqft
+          </small>
+        </h2>
+        <br>
+        <button type="button" class="btn w3-flat-sun-flower" data-toggle="modal" data-target="#modalone">  Read more
+        </button>
+        <br>
+        <br>
+        
+        <!-- The Modal -->
+        <div class="modal" id="modalone">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title text-center">Single Family Home $1800/m</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              
+              <!-- Modal body -->
+              <div class="modal-body text-left">
+                <p>
+                  Built in 1986 this spacious home with vaulted ceilings has 3 bed rooms, 2 bathrooms, 1344 sqft.  New central AC and Heating system, new energy efficient windows, new carpet and vinyl flooring.  Attached 2 car garage. On a .72 acre lot with beautiful views. 
+                </p>
+                <div class="row imgsamesize">
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <img src="images/1.jpg">
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-6">
+                    <img src="images/9.jpg">
+                  </div>
+                </div>
+                
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn w3-flat-sun-flower" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="second">
+    <div class="container jumbotron text-center">
+      <h2 class="text-center">Other amenities</h2><br>
+      <img src="old-images/logo2.png" style="width: 10%;"><br> <br>
+      <p class="text-center text-justify">
+        <!--
+        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        -->
+        Central Heating & Air.  Fiber internet access.  All rooms wired with ethernet.  Water & Sanitation provided by the city of Victorville.  Gas supplied Southwest Gas Utility.  Power from Southern California Edison.  Sewage via Septic Tank.  Includes dishwasher, washer, dryer, fridge.  Enough parking for 4 cars in the driveway and 2 in the garage.  New exterior paint.  Quiet neighborhood.
+      </p>
+    </div>
+  </div>
+  <div class="row third">
+    <div class="col-12 col-md-12 col-lg-3">
+      <img src="images/4.jpg">
+      <div class="container w3-flat-midnight-blue">
+        <br>
+        <h4 class="text-center text-uppercase"><small>Spacious living room</small></h4>
+        <br>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-3">
+      <img src="images/6.jpg">
+      <div class="container w3-flat-nephritis">
+        <br>
+        <h4 class="text-center text-uppercase"><small>Dining room</small></h4>
+        <br>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-3">
+      <img src="images/7.jpg">
+      <div class="container w3-flat-midnight-blue">
+        <br>
+        <h4 class="text-center text-uppercase"><small>Large kitchen area</small></h4>
+        <br>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-3">
+      <img src="images/7a.jpg">
+      <div class="container w3-flat-nephritis">
+        <br>
+        <h4 class="text-center text-uppercase"><small>Master bedroom</small></h4>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="four jumbotron" id="rent-a-home" style="margin-bottom:0px;">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 container text-center text1">
+        <h4 class="text-center text-uppercase">Good location: San Bernardino County</h4>
+        <img src="old-images/logo3.png" style="width: 10%;"><br>
+        <p>
+          San Bernardino offers something to its visitors that no other place can: an opportunity to ski in the cold peaks of the San Bernardino Mountains and then to bask in the heat of Death Valley all in the same day. The county is so large that it is even bigger than some states such as Rhode Island and Delaware, meaning that no matter how long you’re there for, you’re never out of things to see and do in San Bernardino. Unique things that you can only do there are hike the San Bernardino Mountains, visit the very first McDonald’s that ever opened, and dine in the incomparable Castaway Restaurant.
+        </p>
+        <p>
+          San Bernardino County is home to one of the greatest landscapes Southern California has to offer. And with a diverse mix, including mountains, ocean and desert, this region provides an ideal environment for hikers, mountaineers on mountain bikes or just about anyone who wants something new that can help them experience natural beauty in its many shades of green.
+        </p>
+      </div>
+      <div class="col-12 col-md-12 col-lg-6 container text-center local">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-6 container text-center local2">
+      </div>
+      <div class="col-12 col-md-12 col-lg-6 container text-center text1">
+        <h4 class="text-center text-uppercase">First-class Interior</h4>
+        <img src="old-images/logo3.png" style="width: 10%;"><br><br>
+        <p><br>
+          Family home with first class interior and amenities, including new flooring, energy efficient windows, washer/dryer, oven range, fridge.
+        </p>
+        <p>
+          The family room is open and spacious with vaulted ceilings.  Skylight in the living room entry way, letting natural light in all day.  Large counter space and bar in the kitchen.  
+        </p>
+        <p>
+          The house comes supplied with an evaporative cooler that cools the entire home.  Perfect for the high desert environment and great for reducing energy costs in the summer.
+        </p>
+        <p>
+          Each room is wired for ethernet, perfect for Work From Home situations. One of the rooms can easily be repurposed for a home office.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="map" id="things-to-do">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="text-center" style="color:white">What to do in the area?</h2>
+    <img class="mx-auto d-block" src="old-images/logo4.png" style="width:10%"><br><br>
+
+    <div class="row">
+      
+      <div class="col-1 col-md-1 col-lg-1"></div>
+
+      <div class="col-3 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="images/to_do/1.jpeg">
+          <div class="name"><h3>History</h3></name>
+            <div class="about_place">
+              Victorville's history dates back more than 100 years prior to incorporation, when the first settlers of European descent arrived.  <br>
+              In about 1885, the community was known as Victor. It was named after Jacob Nash Victor, a construction superintendent for the California Southern Railroad (Santa Fe Railroad). 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-4 col-md-4 col-lg-4"></div>
+      
+      <div class="col-3 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="images/to_do/3.jpeg">
+          <div class="name"><h3>Family activities</h3></name>
+            <div class="about_place">
+              Whether you're looking for a great meal, a perfect park, a night out, or a cool day trip; fun awaits in Victorville!  Take a look at our quick list of Things To Do to take advantage of the many amenities Victorville has to offer and to plan your next adventure.  Enjoy!  
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-1 col-md-1 col-lg-1"></div>
+
+    </div>
+  
+    <div class="row" style="margin-top:0.9em;">
+
+      <div class="col-1 col-md-1 col-lg-1"></div>
+
+      <div class="col-3 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="images/to_do/2.jpeg">
+          <div class="name"><h3>Shopping</h3></name>
+            <div class="about_place">
+              Dunia Plaza, just south of the Mall of Victor Valley, features a Lowe's Home Improvement, Kohl's, Walmart, Michael's Crafts, and Staples to name a few.  Dunia Plaza is adjacent to the High Desert's dining destination, Restaurant Row that features 19 eateries including Cracker Barrel, BJ's as well as Pancho Villa's to name a few.  Dunia Plaza and Restaurant Row are some of our most desirable retail locations because of their immediate frontage to more than 98,000 daily vehicles along I-15.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 col-md-4 col-lg-4">
+      </div>
+      
+      <div class="col-3 col-md-3 col-lg-3">
+        <div class="card">
+          <img src="images/to_do/4.jpeg">
+          <div class="name"><h3>Wildlife</h3></name>
+            <div class="about_place">
+              Bobcats, Chuckawallas, Coyotes, Roadrunners, Tortoises, and so much more! <br>
+              People come to the high desert for many reasons, not the least of which is the stark beauty of the desert itself. High desert climate and topography have created challenging ecosystems which need protecting and which are home to different types of wildlife. Human residents of the high desert should take the time to learn about the non-human residents who share this environment in order to co-exist safely and harmoniously. 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-1 col-md-1 col-lg-1"></div>
+
+    </div>
+  </div>
+  
+  <div class="six" id="contact-us"><br><br>
+    <h3 class="text-white text-center">Ready to rent the house?</h3><br><br>
+    <p class="text-white text-center">Leave your contact details below so an agent can contact you.</p>
+    <div class="row">
+      <div class="col-12 container jumbotron">
+        <form class="form-inline" id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" placeholder="Name" name="name" id="contact-name">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" placeholder="Enter email" name="email" id="contact-email">
+          <label for="tel">Telephone</label>
+          <input type="tel" class="form-control" placeholder="Phone" name="phone" id="contact-phone">
+          <button type="submit" class="btn w3-flat-sun-flower">Submit</button>
+        </form>
+        <div class="d-none" id="after-response">
+          <h2>Thank you for your interest, an agent should be contacting you soon.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <br><br>
+  <div class="container five text-center" id="other-properties">
+    <h3 class="text-center">Other properties</h3><br><br>
+    <img src="old-images/logo3.png" style="width: 10%;"><br><br><br>
+    <p>From all over california Sigma Properties has a location for you. </p>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-6 card">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="images/bp/1.jpg">
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="images/bp/2.jpg" style="width: 45%;">
+          <img src="images/bp/3.jpg" style="width: 45%;">
+          <img src="images/bp/4.jpg" style="width: 45%;">
+          <img src="images/bp/5.jpg" style="width: 45%;">
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="text-left" style="color: #4a9375!important"><small>Orange County</small></h3>
+        <p class="text-left">Single family home in the heart of Orange County. </p>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6" style="background-color:#e9ecef">
+            4 bed, 2 bath
+            <p style="color:#4a9375!important">Price: $2,900/m</p>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 w3-flat-sun-flower text-center">
+            <br> (Not currently available)
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-12 col-md-12 col-lg-6 card">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="images/rh/1.jpg">
+        </div>
+        <div class="col-12 col-md-12 col-lg-6">
+          <img src="images/rh/2.jpg" style="width: 45%;">
+          <img src="images/rh/3.jpg" style="width: 45%;">
+          <img src="images/rh/4.jpg" style="width: 45%;">
+          <img src="images/rh/5.jpg" style="width: 45%;">
+        </div>
+      </div>
+      <div class="card-body">
+        <h3 class="text-left" style="color: #4a9375!important"><small>Los Angeles County</small></h3>
+        <p class="text-left">Quiet neighborhood with large backyard and pool. </p>
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-6" style="background-color:#e9ecef">
+            4 bed, 2 bath
+            <p style="color:#4a9375!important">Price: $2,800/m</p>
+          </div>
+          <div class="col-12 col-md-12 col-lg-6 w3-flat-sun-flower text-center">
+            <br> (Not currently available)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
+  <div class="subsribe">
+    <br>
+    <br>
+    <h3 class="text-center">Intrested to know more?</h3>
+    <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="input-group mb-3 mx-auto">
+      <input type="text" class="form-control" placeholder="Email" id="demo" name="email" style="width:30%">
+      <input type="text" class="form-control" placeholder="your Telephone" id="demo2" name="tel" style="width:30%">
+      <button>SUBMIT</button>
+    </div>
+  </div>
+  -->
+  
+  <!--
+  <div class="footer">
+    <p>
+      That is the example of my front-end. <br>For job suggestions write me on <i>natkayellow@gmail.com</i>
+    </p>
+  </div>
+  -->
+  
+</body>
+</html>
+
+<script>
+//document.getElementById('contact-form').onsubmit
+
+const form = document.getElementById('contact-form');
+const name = document.getElementById('contact-name');
+const email = document.getElementById('contact-email');
+const phone = document.getElementById('contact-phone');
+const after = document.getElementById('after-response');
+
+function onSubmitContact(event) {
+  event.preventDefault();
+
+  var formId = '1FAIpQLSdeLkMbBw3ro9EoUCwsyNqzRm9w7N0aAe2sOIWp2ydbm6Oyng';
+  var queryString = '/formResponse?&entry.1481072923=' + name.value + '&entry.543030759=' + email.value + '&entry.794445596=' + phone.value + '&submit=SUBMIT';
+
+  var url = 'https://docs.google.com/forms/d/e/' + formId + queryString;
+
+  var opts = {
+    method: "POST",
+    mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+    redirect: "follow", 
+    referrer: "no-referrer"
+  }
+
+  return fetch(url, opts).then(data => {
+    after.classList.remove('d-none');
+    form.classList.add('d-none');
+  });
+}
+
+form.onsubmit = onSubmitContact;
+
+</script>
